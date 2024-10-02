@@ -13,6 +13,7 @@ const RadioForm = () => {
             try {
                 const optionsData = await fetchOptions();
                 setOptions(optionsData);
+                console.log(optionsData)
                 const statisticsData = await fetchStatistics();
                 setStatistics(statisticsData);
             } catch (error) {
